@@ -49,6 +49,13 @@ if has('gui_running')
     set guioptions-=T  " no toolbar
     set guioptions-=r  " no right-hand scrollbar
     set guioptions-=L  " no left-hand scrollbar
+    if has('gui_gtk3') || has('gui_gtk2')
+        set guifont=JetBrains\ Mono\ Regular\ 14
+    elseif has("gui_macvim")
+        set guifont=Menlo\ Regular:h14
+    elseif has("gui_win32")
+        set guifont=Consolas:h10:cANSI
+    endif
 endif
 
 " COLORSCHEME
@@ -58,3 +65,24 @@ colorscheme molokai
 " ALL VARIABLE
 """"""""""""""
 let mapleader = "\<Space>"
+
+" GLOBAL VARIABLE
+"""""""""""""""""
+" airline
+let g:airline_powerline_fonts  = 1
+" airline - extensions
+let g:airline#extensions#tagbar#enabled = 0
+
+" nerdtree
+let NERDTreeIgnore = ['^__pycache__$', '^bower_components$', '^node_modules$', '^tags$', '\.o$', '\.out$', '\.pyc$']
+
+" startify
+let g:startify_list_order = [['   Sessions'], 'sessions', ['   Bookmarks'], 'bookmarks', ['   MRU'], 'files']
+
+" ultisnips
+let g:UltiSnipsExpandTrigger="<c-j>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" YouCompleteMe
+let g:ycm_key_list_select_completion = ['<tab>, <Down>', '<Enter>']
