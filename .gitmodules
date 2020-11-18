@@ -1,0 +1,66 @@
+[submodule "dotfiles/vim/pack/vendor/start/vim-airline"]
+	path = dotfiles/vim/pack/vendor/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline
+[submodule "dotfiles/vim/pack/vendor/start/molokai"]
+	path = dotfiles/vim/pack/vendor/start/molokai
+	url = https://github.com/tomasr/molokai
+[submodule "dotfiles/vim/pack/vendor/start/YouCompleteMe"]
+	path = dotfiles/vim/pack/vendor/start/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe
+[submodule "dotfiles/vim/pack/vendor/start/ultisnips"]
+	path = dotfiles/vim/pack/vendor/start/ultisnips
+	url = https://github.com/SirVer/ultisnips
+[submodule "dotfiles/vim/pack/vendor/start/vim-fugitive"]
+	path = dotfiles/vim/pack/vendor/start/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
+[submodule "dotfiles/vim/pack/vendor/start/vim-abolish"]
+	path = dotfiles/vim/pack/vendor/start/vim-abolish
+	url = https://github.com/tpope/vim-abolish
+[submodule "dotfiles/vim/pack/vendor/start/vim-repeat"]
+	path = dotfiles/vim/pack/vendor/start/vim-repeat
+	url = https://github.com/tpope/vim-repeat
+[submodule "dotfiles/vim/pack/vendor/start/vim-surround"]
+	path = dotfiles/vim/pack/vendor/start/vim-surround
+	url = https://github.com/tpope/vim-surround
+[submodule "dotfiles/vim/pack/vendor/start/vim-unimpaired"]
+	path = dotfiles/vim/pack/vendor/start/vim-unimpaired
+	url = https://github.com/tpope/vim-unimpaired
+[submodule "dotfiles/vim/pack/vendor/start/vim-vinegar"]
+	path = dotfiles/vim/pack/vendor/start/vim-vinegar
+	url = https://github.com/tpope/vim-vinegar
+[submodule "dotfiles/vim/pack/vendor/start/vim-snippets"]
+	path = dotfiles/vim/pack/vendor/start/vim-snippets
+	url = https://github.com/honza/vim-snippets
+[submodule "dotfiles/vim/pack/vendor/start/vim-gitgutter"]
+	path = dotfiles/vim/pack/vendor/start/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter
+[submodule "dotfiles/vim/pack/vendor/start/nerdcommenter"]
+	path = dotfiles/vim/pack/vendor/start/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter
+[submodule "dotfiles/vim/pack/vendor/start/nerdtree"]
+	path = dotfiles/vim/pack/vendor/start/nerdtree
+	url = https://github.com/scrooloose/nerdtree
+[submodule "dotfiles/vim/pack/vendor/start/nerdtree-git-plugin"]
+	path = dotfiles/vim/pack/vendor/start/nerdtree-git-plugin
+	url = https://github.com/Xuyuanp/nerdtree-git-plugin
+[submodule "dotfiles/vim/pack/vendor/start/ale"]
+	path = dotfiles/vim/pack/vendor/start/ale
+	url = https://github.com/w0rp/ale
+[submodule "dotfiles/vim/pack/vendor/start/indentLine"]
+	path = dotfiles/vim/pack/vendor/start/indentLine
+	url = https://github.com/Yggdroot/indentLine
+[submodule "dotfiles/vim/pack/vendor/start/vim-Startify"]
+	path = dotfiles/vim/pack/vendor/start/vim-Startify
+	url = https://github.com/mhinz/vim-Startify
+[submodule "dotfiles/vim/pack/vendor/start/vim-table-mode"]
+	path = dotfiles/vim/pack/vendor/start/vim-table-mode
+	url = https://github.com/dhruvasagar/vim-table-mode
+[submodule "dotfiles/vim/pack/vendor/start/vim-easymotion"]
+	path = dotfiles/vim/pack/vendor/start/vim-easymotion
+	url = https://github.com/Lokaltog/vim-easymotion
+[submodule "dotfiles/vim/pack/vendor/start/delimitMate"]
+	path = dotfiles/vim/pack/vendor/start/delimitMate
+	url = https://github.com/Raimondi/delimitMate
+[submodule "dotfiles/vim/pack/vendor/start/vim-expand-region"]
+	path = dotfiles/vim/pack/vendor/start/vim-expand-region
+	url = https://github.com/terryma/vim-expand-region

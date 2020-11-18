@@ -1,0 +1,11 @@
+config:
+  longkey: true
+dotfiles:
+  d_vim:
+    dst: ~/.vim
+    src: vim
+    link: link
+profiles:
+  debian:
+    dotfiles:
+      - d_vim
