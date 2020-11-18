@@ -86,3 +86,20 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 " YouCompleteMe
 let g:ycm_key_list_select_completion = ['<tab>, <Down>', '<Enter>']
+
+" MAP
+"""""
+nnoremap Y y$
+nnoremap j gj
+nnoremap k gk
+
+" resize splits
+nnoremap <M-j> <C-w>-
+nnoremap <M-k> <C-w>+
+nnoremap <M-h> <C-w><
+nnoremap <M-l> <C-w>>
+
+nmap <silent> <leader>ev :e $HOME/.vimrc<CR>
+nmap <silent> <leader>sv :so $HOME/.vimrc<CR>
+nnoremap <leader>n       :NERDTreeToggle<CR>
+noremap <silent><Leader>/ :nohls<CR>
