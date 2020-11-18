@@ -2,10 +2,29 @@ config:
   longkey: true
 dotfiles:
   d_vim:
-    dst: ~/.vim
     src: vim
+    dst: ~/.vim
+    link: link
+  f_ctags:
+    src: ctags
+    dst: ~/.ctags
+    link: link
+  f_gitconfig:
+    src: gitconfig
+    dst: ~/.gitconfig
+  f_vimrc:
+    src: vimrc
+    dst: ~/.vimrc
+    link: link
+  f_zshrc:
+    src: zshrc
+    dst: ~/.zshrc
     link: link
 profiles:
   debian:
     dotfiles:
-      - d_vim
+    - d_vim
+    - f_ctags
+    - f_gitconfig
+    - f_vimrc
+    - f_zshrc

@@ -1,0 +1,60 @@
+" GLOBAL SETTING
+""""""""""""""""
+" general
+set nocompatible                                        " MUST BE FIRST LINE!!! Vi IMproved
+set autoindent                                          " take indent for new line from previous line
+if has('unix')
+    set clipboard=unnamedplus
+elseif has('win64') || has('win32')
+    set clipboard=unnamed
+endif
+set cursorline                                          " highlight current line
+set encoding=utf-8                                      " use UTF-8
+set lazyredraw                                          " don't redraw while executing macros
+set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:< " characters for displaying in list mode
+set nobackup                                            " 
+set noswapfile                                          " whether to use a swapfile for a buffer
+set nowrap                                              " 
+set number                                              " print the line number in front of each line
+set pastetoggle=<F10>                                   " key code that causes 'paste' to toggle
+set scrolloff=3                                         " minimum number of lines above and below cursor
+set showcmd                                             " display incomplete commands
+set synmaxcol=400                                       " maximum column to find syntax items
+set t_Co=256
+set visualbell                                          " error bells are displayed visually
+set wildmenu                                            " show autocomplete menus
+set wildignore=*.o,*~,*.pyc                             " files matching these patterns are not completed
+set tags=./tags;$HOME                                   " look in the current directory for 'tags', and work up the tree towards $HOME until one is found
+" search
+set hlsearch                                            " highlight search
+set ignorecase                                          " ignore case when searching
+set incsearch                                           " search as you type
+" tab
+set tabstop=4                                           " number of spaces that <tab> in file uses
+set expandtab                                           " insert appropriate number of spaces instead of a tab
+set shiftwidth=4                                        " number of spaces to use for (auto)indent step
+set smarttab                                            " use 'shiftwidth' when inserting <tab>
+" required by plugins
+set grepprg=grep\ -nH\ $*                               " REQUIRED!!! by vim-latexsuite
+set laststatus=2                                        
+
+" SYNTAX
+""""""""
+syntax on " enable syntax highlighting.
+
+" GVIM
+""""""
+if has('gui_running')
+    set guioptions-=m  " no menubar
+    set guioptions-=T  " no toolbar
+    set guioptions-=r  " no right-hand scrollbar
+    set guioptions-=L  " no left-hand scrollbar
+endif
+
+" COLORSCHEME
+"""""""""""""
+colorscheme molokai
+
+" ALL VARIABLE
+""""""""""""""
+let mapleader = "\<Space>"
