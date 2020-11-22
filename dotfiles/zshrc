@@ -81,6 +81,7 @@ plugins=(
     docker-compose
     encode64
     extract
+    fzf
     git
     gitignore
     gradle
