@@ -91,6 +91,7 @@ plugins=(
     mvn
     pipenv
     rsync
+    systemd
 )
 
 source $ZSH/oh-my-zsh.sh
