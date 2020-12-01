@@ -5,7 +5,6 @@ name = "pypi"
 
 [packages]
 dotdrop = "*"
-python-magic = "*"
 
 [dev-packages]
 
