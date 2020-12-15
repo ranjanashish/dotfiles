@@ -12,6 +12,17 @@ dotfiles:
   f_gitconfig:
     src: gitconfig
     dst: ~/.gitconfig
+  f_tmuxconfig:
+    src: tmux/.tmux.conf
+    dst: ~/.tmux.conf
+    link: link
+  f_tmuxconfiglocal:
+    src: tmux/.tmux.conf.local
+    dst: ~/.tmux.conf.local
+  f_urlview:
+    src: urlview
+    dst: ~/.urlview
+    link: link
   f_vimrc:
     src: vimrc
     dst: ~/.vimrc
@@ -26,5 +37,8 @@ profiles:
     - d_vim
     - f_ctags
     - f_gitconfig
+    - f_tmuxconfig
+    - f_tmuxconfiglocal
+    - f_urlview
     - f_vimrc
     - f_zshrc

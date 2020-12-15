@@ -64,3 +64,15 @@
 [submodule "dotfiles/vim/pack/vendor/start/vim-expand-region"]
 	path = dotfiles/vim/pack/vendor/start/vim-expand-region
 	url = https://github.com/terryma/vim-expand-region
+[submodule "dotfiles/vim/pack/vendor/start/rust.vim"]
+	path = dotfiles/vim/pack/vendor/start/rust.vim
+	url = https://github.com/rust-lang/rust.vim
+[submodule "dotfiles/vim/pack/vendor/start/vim-numbertoggle"]
+	path = dotfiles/vim/pack/vendor/start/vim-numbertoggle
+	url = https://github.com/jeffkreeftmeijer/vim-numbertoggle
+[submodule "dotfiles/vim/pack/vendor/start/vim-autoformat"]
+	path = dotfiles/vim/pack/vendor/start/vim-autoformat
+	url = https://github.com/Chiel92/vim-autoformat
+[submodule "dotfiles/tmux"]
+	path = dotfiles/tmux
+	url = https://github.com/gpakosz/.tmux.git
