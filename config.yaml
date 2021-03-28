@@ -42,3 +42,13 @@ profiles:
     - f_urlview
     - f_vimrc
     - f_zshrc
+  macos:
+    dotfiles:
+    - d_vim
+    - f_ctags
+    - f_gitconfig
+    - f_tmuxconfig
+    - f_tmuxconfiglocal
+    - f_urlview
+    - f_vimrc
+    - f_zshrc
