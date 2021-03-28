@@ -78,6 +78,7 @@ plugins=(
     copydir
     copyfile
     debian
+    direnv
     docker
     docker-compose
     encode64
@@ -123,4 +124,19 @@ export LANG=en_IN.UTF-8
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export PATH=~/.local/bin:$PATH
+export PATH="$HOME/.local/bin:$PATH"
+
+# go
+export PATH="$HOME/go/bin:$PATH"
+export GO111MODULE=on
+
+# pyenv
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+# buku
+alias b='buku --suggest'
+
+# krew
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
