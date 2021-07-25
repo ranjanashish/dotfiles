@@ -86,13 +86,19 @@ plugins=(
     fzf
     git
     gitignore
+    golang
     gradle
     helm
     kubectl
     magic-enter
     mvn
+    npm
+    nvm
     pipenv
+    pyenv
+    python
     rsync
+    sudo
     systemd
 )
 
@@ -129,11 +135,6 @@ export PATH="$HOME/.local/bin:$PATH"
 # go
 export PATH="$HOME/go/bin:$PATH"
 export GO111MODULE=on
-
-# pyenv
-export PATH="$HOME/.pyenv/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
 
 # buku
 alias b='buku --suggest'
