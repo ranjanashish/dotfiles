@@ -1,6 +1,14 @@
 config:
   longkey: true
 dotfiles:
+  d_nvm:
+    src: nvm
+    dst: ~/.nvm
+    link: link
+  d_pyenv:
+    src: pyenv
+    dst: ~/.pyenv
+    link: link
   d_vim:
     src: vim
     dst: ~/.vim
@@ -34,6 +42,8 @@ dotfiles:
 profiles:
   debian:
     dotfiles:
+    - d_nvm
+    - d_pyenv
     - d_vim
     - f_ctags
     - f_gitconfig
@@ -44,6 +54,8 @@ profiles:
     - f_zshrc
   macos:
     dotfiles:
+    - d_nvm
+    - d_pyenv
     - d_vim
     - f_ctags
     - f_gitconfig
