@@ -90,6 +90,9 @@ let g:ycm_key_list_select_completion = ['<tab>, <Down>', '<Enter>']
 " MAP
 """""
 nnoremap Y y$
+nnoremap n nzzzv
+nnoremap N Nzzzv
+nnoremap J mzJ`z
 nnoremap j gj
 nnoremap k gk
 
