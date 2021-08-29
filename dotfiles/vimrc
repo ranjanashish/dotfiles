@@ -3,10 +3,10 @@
 " general
 set nocompatible                                        " MUST BE FIRST LINE!!! Vi IMproved
 set autoindent                                          " take indent for new line from previous line
-if has('unix')
-    set clipboard=unnamedplus
-elseif has('win64') || has('win32')
+if has('mac') || has('win64') || has('win32')
     set clipboard=unnamed
+else
+    set clipboard=unnamedplus
 endif
 set cursorline                                          " highlight current line
 set encoding=utf-8                                      " use UTF-8
@@ -51,9 +51,9 @@ if has('gui_running')
     set guioptions-=L  " no left-hand scrollbar
     if has('gui_gtk3') || has('gui_gtk2')
         set guifont=JetBrains\ Mono\ Regular\ 13
-    elseif has("gui_macvim")
+    elseif has('gui_macvim')
         set guifont=Menlo\ Regular:h14
-    elseif has("gui_win32")
+    elseif has('gui_win32')
         set guifont=Consolas:h10:cANSI
     endif
 endif
