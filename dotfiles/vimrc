@@ -73,6 +73,10 @@ let g:airline_powerline_fonts  = 1
 " airline - extensions
 let g:airline#extensions#tagbar#enabled = 0
 
+" floaterm
+let g:floaterm_autoclose = 2
+let g:floaterm_keymap_toggle = '<F12>'
+
 " nerdtree
 let NERDTreeIgnore = ['^__pycache__$', '^bower_components$', '^node_modules$', '^tags$', '\.o$', '\.out$', '\.pyc$']
 

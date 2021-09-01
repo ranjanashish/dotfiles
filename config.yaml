@@ -1,6 +1,10 @@
 config:
   longkey: true
 dotfiles:
+  d_jenv:
+    src: jenv
+    dst: ~/.jenv
+    link: link
   d_nvm:
     src: nvm
     dst: ~/.nvm
@@ -42,6 +46,7 @@ dotfiles:
 profiles:
   debian:
     dotfiles:
+    - d_jenv
     - d_nvm
     - d_pyenv
     - d_vim
@@ -54,6 +59,7 @@ profiles:
     - f_zshrc
   macos:
     dotfiles:
+    - d_jenv
     - d_nvm
     - d_pyenv
     - d_vim

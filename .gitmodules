@@ -82,3 +82,9 @@
 [submodule "dotfiles/nvm"]
 	path = dotfiles/nvm
 	url = https://github.com/nvm-sh/nvm
+[submodule "dotfiles/jenv"]
+	path = dotfiles/jenv
+	url = https://github.com/jenv/jenv
+[submodule "dotfiles/vim/pack/vendor/start/vim-floaterm"]
+	path = dotfiles/vim/pack/vendor/start/vim-floaterm
+	url = https://github.com/voldikss/vim-floaterm
