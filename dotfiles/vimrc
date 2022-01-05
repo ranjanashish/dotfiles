@@ -2,6 +2,9 @@
 """"""""""""""""
 " general
 set nocompatible                                        " MUST BE FIRST LINE!!! Vi IMproved
+let &t_8f="\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b="\<Esc>[48;2;%lu;%lu;%lum"
+set termguicolors
 set autoindent                                          " take indent for new line from previous line
 if has('mac') || has('win64') || has('win32')
     set clipboard=unnamed
@@ -42,18 +45,10 @@ set laststatus=2
 """"""""
 syntax on " enable syntax highlighting.
 
-" GVIM
+" GUI
 """"""
 if has('gui_running')
-    set guioptions-=m  " no menubar
-    set guioptions-=T  " no toolbar
-    set guioptions-=r  " no right-hand scrollbar
-    set guioptions-=L  " no left-hand scrollbar
-    if has('gui_gtk3') || has('gui_gtk2')
-        set guifont=JetBrains\ Mono\ Regular\ 13
-    elseif has('gui_macvim')
-        set guifont=JetBrains\ Mono\ Regular:h13
-    elseif has('gui_win32')
+    if has('gui_win32')
         set guifont=Consolas:h10:cANSI
     endif
 endif
@@ -73,9 +68,16 @@ let g:airline_powerline_fonts  = 1
 " airline - extensions
 let g:airline#extensions#tagbar#enabled = 0
 
+" ale
+let g:ale_linters = {
+\   'proto': ['buf-lint',],
+\}
+
 " floaterm
 let g:floaterm_autoclose = 2
 let g:floaterm_keymap_toggle = '<F12>'
+let g:floaterm_height = 0.9
+let g:floaterm_width = 0.9
 
 " nerdtree
 let NERDTreeIgnore = ['^__pycache__$', '^bower_components$', '^node_modules$', '^tags$', '\.o$', '\.out$', '\.pyc$']

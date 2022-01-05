@@ -17,6 +17,10 @@ dotfiles:
     src: vim
     dst: ~/.vim
     link: link
+  f_alacrittyyml:
+    src: alacritty.yml
+    dst: ~/.alacritty.yml
+    link: link
   f_ctags:
     src: ctags
     dst: ~/.ctags
@@ -39,6 +43,10 @@ dotfiles:
     src: vimrc
     dst: ~/.vimrc
     link: link
+  f_zprofile:
+    src: zprofile
+    dst: ~/.zprofile
+    link: link
   f_zshrc:
     src: zshrc
     dst: ~/.zshrc
@@ -50,6 +58,7 @@ profiles:
     - d_nvm
     - d_pyenv
     - d_vim
+    - f_alacrittyyml
     - f_ctags
     - f_gitconfig
     - f_tmuxconfig
@@ -63,10 +72,12 @@ profiles:
     - d_nvm
     - d_pyenv
     - d_vim
+    - f_alacrittyyml
     - f_ctags
     - f_gitconfig
     - f_tmuxconfig
     - f_tmuxconfiglocal
     - f_urlview
     - f_vimrc
+    - f_zprofile
     - f_zshrc
