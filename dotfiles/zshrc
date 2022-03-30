@@ -8,7 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="af-magic"
+# ZSH_THEME="af-magic"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -70,25 +70,16 @@ export DISABLE_AUTO_TITLE="true"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
     alias-finder
-    autojump
     aws
     colored-man-pages
     command-not-found
-    common-aliases
-    copydir
-    copyfile
-    debian
     direnv
-    docker
-    docker-compose
     encode64
     extract
-    fzf
     git
-    gitignore
-    golang
     gradle
     helm
+    jenv
     kubectl
     magic-enter
     mvn
@@ -98,8 +89,7 @@ plugins=(
     pyenv
     python
     rsync
-    sudo
-    systemd
+    tmux
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -109,7 +99,7 @@ source $ZSH/oh-my-zsh.sh
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
-export LANG=en_IN.UTF-8
+export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -130,14 +120,26 @@ export LANG=en_IN.UTF-8
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export PATH="$HOME/.local/bin:$PATH"
-
-# go
-export PATH="$HOME/go/bin:$PATH"
 export GO111MODULE=on
 
 # buku
 alias b='buku --suggest'
 
-# krew
-export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+source /Users/aranjan/.config/broot/launcher/bash/br
+
+alias docker=podman
+alias docker-compose=podman-compose
+
+export TESTCONTAINERS_RYUK_DISABLED=true
+
+export PATH="$(brew --prefix libpq)/bin:${KREW_ROOT:-$HOME/.krew}/bin:$HOME/go/bin:$HOME/.local/bin:$PATH"
+export LDFLAGS="-I$(brew --prefix openssl@1.1)/include -L$(brew --prefix openssl@1.1)/lib"
+
+export MCFLY_FUZZY=true
+
+eval "$(mcfly init zsh)"
+eval "$(zoxide init zsh)"
+eval "$(starship init zsh)"
+
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

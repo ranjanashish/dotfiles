@@ -88,3 +88,6 @@
 [submodule "dotfiles/vim/pack/vendor/start/vim-floaterm"]
 	path = dotfiles/vim/pack/vendor/start/vim-floaterm
 	url = https://github.com/voldikss/vim-floaterm
+[submodule "dotfiles/vim/pack/vendor/start/vim-buf"]
+	path = dotfiles/vim/pack/vendor/start/vim-buf
+	url = https://github.com/bufbuild/vim-buf
