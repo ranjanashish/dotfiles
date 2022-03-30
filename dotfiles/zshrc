@@ -120,29 +120,26 @@ export LANG=en_US.UTF-8
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export PATH="$HOME/.local/bin:$PATH"
-
-# go
-export PATH="$HOME/go/bin:$PATH"
 export GO111MODULE=on
 
 # buku
 alias b='buku --suggest'
-
-# krew
-export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
 source /Users/aranjan/.config/broot/launcher/bash/br
 
 alias docker=podman
 alias docker-compose=podman-compose
 
-export DOCKER_HOST=unix:///tmp/podman.sock
-export TESTCONTAINERS_CHECKS_DISABLE=true
 export TESTCONTAINERS_RYUK_DISABLED=true
+
+export PATH="$(brew --prefix libpq)/bin:${KREW_ROOT:-$HOME/.krew}/bin:$HOME/go/bin:$HOME/.local/bin:$PATH"
+export LDFLAGS="-I$(brew --prefix openssl@1.1)/include -L$(brew --prefix openssl@1.1)/lib"
 
 export MCFLY_FUZZY=true
 
 eval "$(mcfly init zsh)"
 eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"
+
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
